@@ -1,0 +1,214 @@
+{% extends "hello/layout.html" %}
+{% load static %}
+{% block title %}
+Exhibits
+{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'hello/exhibits.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Dosis:wght@200..800&family=Inter:wght@100..900&family=Madimi+One&family=Nabla&family=Protest+Revolution&family=Protest+Riot&family=Scope+One&family=Truculenta:opsz@12..72&display=swap" rel="stylesheet">
+
+    <title>Exhibit Select</title>
+
+
+</head>
+<div class="background">
+
+<body>
+        <header>
+
+                <div class="Base1">
+                    <div class="header-content">
+                        <h1 class="maintitle">Exhibit</h1>
+                    </div>
+                </div>
+            
+        </header>
+            <main>
+                <div class="grid-container">
+                  <a href="{% url 'artsmart' %}">
+<!-- Art -->       <button class="grid-item" type="button">
+                      <img src="{% static 'images/tartsmart.png' %}" alt="Photo 1"> 
+                      <div class="text-overlay">
+                        <h1>Art Smart</h1>
+                      </div>
+                      </button>
+                    </a>
+                  
+                  <a href="{% url 'BigJohnEXHIBIT' %}">
+<!-- BigJ -->       <button class="grid-item" type="button">
+                      <img src="{% static 'images/BIG-JOHN.jpg' %}" alt="Photo 2">
+                      <div class="text-overlay">
+                        <h1>Big John</h1>
+                        
+                      </div>
+                    </button>
+                  </a>
+
+                  <a href="{% url 'centralB' %}">
+<!-- Bank -->       <button class="grid-item" type="button">
+                      <img src="{% static 'images/bankkBCKGRND.png' %}" alt="Photo 2">
+                      <div class="text-overlay">
+                        <h1>Central Bank</h1>
+                        
+                      </div>
+                    </button>
+                  </a>
+
+                  <a href="{% url 'engworkshop' %}">
+<!--EngWrkshp-->    <button class="grid-item" type="button">
+                      <img src="{% static 'images/engworkshopBCKRND.png' %}" alt="Photo 2">
+                      <div class="text-overlay">
+                        <h1>Engineers' Workshop</h1>
+                        
+                      </div>
+                    </button>
+                  </a>
+
+                  <a href="{% url 'farm' %}">
+<!-- Farm -->       <button class="grid-item" type="button">
+                      <img src="{% static 'images/tfarm.png' %}" alt="FARM">
+                      <div class="text-overlay">
+                        <h1>Farm</h1>
+                        
+                      </div>
+                    </button>
+
+                    <a href="{% url 'firehouse' %}">
+<!-- Fire -->       <button class="grid-item" type="button">
+                      <img src="{% static 'images/tfire.png' %}" alt="Firhouse">
+                      <div class="text-overlay">
+                        <h1>Firehouse</h1>
+                       
+                      </div>
+                    </button>
+                  </a>
+
+                  <a href="{% url 'globecafe' %}">
+<!-- Cafe -->       <button class="grid-item" type="button">
+                      <img src="{% static 'images/tcafe.png' %}" alt="Cafe">
+                      <div class="text-overlay">
+                        <h1>Global Café</h1>
+                        
+                      </div>
+                    </button>
+                    </a>
+
+                    <a href="{% url 'icecream' %}">
+<!--ICecream-->     <button class="grid-item" type="button">
+                      <img src="{% static 'images/ticecream.png' %}" alt="Ice Cream">
+                      <div class="text-overlay">
+                        <h1>Ice Cream Parlor</h1>
+                        
+                      </div>
+                    </button>
+                    </a>
+
+
+                    <a href="{% url 'kidsport' %}">
+<!--Kidsport-->     <button class="grid-item" type="button">
+                      <img src="{% static 'images/tkidport.png' %}" alt="Kidsport">
+                      <div class="text-overlay">
+                        <h1>Kidsport</h1>
+                        
+                      </div>
+                    </button>
+                    </a>
+
+                    <a href="{% url 'lightcloud' %}">
+<!--Light Cloud --> <button class="grid-item" type="button">
+                      <img src="{% static 'images/tlightcloud.png' %}" alt="LightCloud">
+                      <div class="text-overlay">
+                        <h1>Light Cloud</h1>
+                        
+                      </div>
+                    </button>
+                    </a>
+
+                    <a href="{% url 'pizza' %}">
+<!--Pizza-->        <button class="grid-item" type="button">
+                      <img src="{% static 'images/tpizza.png' %}" alt="PIZZA">
+                      <div class="text-overlay">
+                        <h1>Pizza Place</h1>
+                        
+                      </div>
+                    </button>
+                    </a>
+
+                    <a href="{% url 'publix' %}">
+<!--Publix-->       <button class="grid-item" type="button">
+                      <img src="{% static 'images/tpublix.png' %}" alt="Publix">
+                      <div class="text-overlay">
+                        <h1>Publix</h1>
+                        
+                      </div>
+                    </button>
+                    </a>
+
+                    <a href="{% url 'childrenshospital' %}">
+<!--C Hospital -->  <button class="grid-item" type="button">
+                      <img src="{% static 'images/tchildrenh.png' %}" alt="Children's Hospital">
+                      <div class="text-overlay">
+                        <h1>St. Joseph's Children's Hospital</h1>
+                        
+                      </div>
+                    </button>
+                    </a>
+
+                    <a href="{% url 'tugboat' %}">
+<!--TUG TOTS-->     <button class="grid-item" type="button">
+                      <img src="{% static 'images/ttugboat.png' %}" alt="Tugboat">
+                      <div class="text-overlay">
+                        <h1>Tugboat Tots</h1>
+                        
+                      </div>
+                    </button>
+                    </a>
+
+                    <a href="{% url 'twinkle' %}">
+<!--TWINKLE-->      <button class="grid-item" type="button">
+                      <img src="{% static 'images/ttwinklestar.png' %}" alt="Twinkle Stars">
+                      <div class="text-overlay">
+                        <h1>Twinkle Stars Theater</h1>
+                        
+                      </div>
+                    </button>
+                    </a>
+
+                    <a href="{% url 'vet' %}">
+<!-- Vet -->        <button class="grid-item" type="button">
+                      <img src="{% static 'images/tvet.png' %}" alt="Vet Clinic">
+                      <div class="text-overlay">
+                        <h1>Vet Clinic</h1>
+                       
+                      </div>
+                    </button>
+                    </a>
+
+                    <a href="{% url 'journey' %}">
+<!-- Water -->      <button class="grid-item" type="button">
+                      <img src="{% static 'images/twjourney.png' %}" alt="Water's Journey">
+                      <div class="text-overlay">
+                        <h1>Water's Journey</h1>
+                       
+                      </div>
+                    </button>
+                    </a>
+                    
+                  </div>
+                             
+            </main>
+
+<footer> <!--footer begins-->
+    <p>Copyright © 2024 Glazer's Children's Musuem</p>
+</footer> <!--footer ends-->
+</body>
+</div>
+</html>
+{% endblock %}
