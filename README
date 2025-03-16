@@ -1,5 +1,18 @@
-BUGS:
--On activity page, egocentrism routes to bones instead of displaying its proper page.
--Whats to draw/surely youre joking activity: Displaying ' as weird symbol.
--Need to connect buttons on left side of home page to proper section on activity page
--
+# Glazer Children's Museum Website
+
+This is a Django-based website designed for the **Glazer Children's Museum** as part of a class project. The site provides an interactive way for users to explore museum events, view details, and access additional resources.
+
+## Features
+- Event Listing System – Users can browse museum events with detailed descriptions.
+- Custom UI Design – Clean, responsive design for all devices.
+- Admin Panel – Staff can manage event listings through Django’s admin interface.
+- Database-Driven Content – Powered by Django’s ORM for structured data storage.
+- Dynamic Event Filtering – Users can filter events by category, date, or popularity.
+
+## Technologies Used
+- Backend: Django (Python), Django ORM, JavaScript
+- Frontend: HTML, CSS
+- Database: SQLite / PostgreSQL
+- Version Control: Git & GitHub
+
+Project was deployed using AWS: https://3.129.211.21:8000/
